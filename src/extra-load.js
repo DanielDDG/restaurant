@@ -1,9 +1,9 @@
 export function createTabs() {
 
     const tabs = document.createElement('div');
-    const home = document.createElement('div');
-    const menu = document.createElement('div');
-    const contact = document.createElement('div');
+    const home = document.createElement('button');
+    const menu = document.createElement('button');
+    const contact = document.createElement('button');
 
     tabs.id = 'tabs';
     home.id = 'home';
@@ -14,7 +14,7 @@ export function createTabs() {
     menu.textContent = 'Menu';
     contact.textContent = 'Contact';
 
-    document.body.insertBefore(tabs, content);
+    page.appendChild(tabs);
     tabs.appendChild(home);
     tabs.appendChild(menu);
     tabs.appendChild(contact);
