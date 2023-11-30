@@ -216,7 +216,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: ;
 }
 
 #socialContent > div {
@@ -266,8 +265,4 @@ body {
 #instagram {
     margin-right: 40px;
     margin-left: -40px;
-}
-
-#facebook {
-
 }
