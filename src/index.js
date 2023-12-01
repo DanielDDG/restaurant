@@ -3,10 +3,11 @@ import { createHTML } from "./page-load";
 import { createTabs } from './extra-load';
 import { createHomeTab } from './home';
 import { createMenuTab } from './menu';
+import { createContactTab } from './contact';
 
 createHTML();
 createTabs();
-createMenuTab();
+createContactTab();
 console.log('Everything is working!');
 
 home.addEventListener('click', () => {
@@ -27,4 +28,5 @@ contact.addEventListener('click', () => {
     while (content.firstChild) {
         content.removeChild(content.firstChild);
     }
+    createContactTab();
 })
