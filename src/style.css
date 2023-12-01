@@ -51,12 +51,13 @@ body {
     border-radius: 15%;
     background-color: rgb(66, 190, 190);
     font-size: 25px;
+    font-weight: 900;
     box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
 }
 
-/* Main content. */
+/* Home content. */
 
 #content {
     display: flex;
@@ -113,7 +114,8 @@ body {
 
 /* Top content styling. */
 
-#topContent > div {
+#topContent > div,
+#topContent > img {
     height: 95%;
     width: 70%;
     border: 3px solid black;
@@ -173,8 +175,6 @@ body {
 }
 
 #restaurantImage {
-    height: 20px;
-    background-image: url('./tavern.jpeg');
     object-fit: fill;
 }
 
@@ -265,4 +265,89 @@ body {
 #instagram {
     margin-right: 40px;
     margin-left: -40px;
+}
+
+/* Tab styling. */
+
+button {
+    cursor: pointer;
+}
+
+#home:active,
+#menu:active,
+#contact:active {
+    background-color: #ffffff;
+}
+
+/* Menu Content */
+
+#menuTitleContainer {
+    height: 100px;
+}
+
+#topMenuContent,
+#bottomMenuContent {
+    height: 320px;
+}
+
+#menuTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+    background-color: rgb(248, 0, 227);
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 250%;
+}
+
+#topMenuContent {
+    margin-top: -30px;
+}
+
+#topMenuContent > div,
+#bottomMenuContent > div {
+    height: 95%;
+    width: 40%;
+}
+
+#blueMilkContainer,
+#rontoContainer,
+#katSakaContainer,
+#felucianKeftaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    gap: 10px;
+}
+
+#blueMilkTitle,
+#rontoTitle,
+#katSakaTitle,
+#felucianKeftaTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(0, 0, 0);
+    height: 50px;
+    width: 280px;
+    background-color: whitesmoke;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+#blueMilkContent,
+#rontoContent,
+#katSakaContent,
+#felucianKeftaContent {
+    border: solid 3px black;
+    height: 200px;
+    width: 370px;
+    object-fit: fill;
 }

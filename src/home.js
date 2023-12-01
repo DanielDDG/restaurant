@@ -7,7 +7,7 @@ export function createHomeTab() {
     const bottomContent = document.createElement('div');
     const title = document.createElement('div');
     const hours = document.createElement('div');
-    const restaurantImage = document.createElement('div');
+    const restaurantImage = document.createElement('img');
     const location = document.createElement('div');
     const social = document.createElement('div');
     const instagram = document.createElement('div');
@@ -48,7 +48,7 @@ export function createHomeTab() {
 
     // Adding content to the hours container divs.
 
-    title.textContent = 'Intergalatic Diner';
+    title.textContent = 'Intergalactic Diner';
     hoursTitle.textContent = 'Hours';
     monday.textContent = 'Monday: 6 A.M. - 6 P.M.';
     tuesday.textContent = 'Tuesday: 6 A.M. - 6 P.M.';
@@ -102,6 +102,10 @@ export function createHomeTab() {
     twitterContent.textContent = '@IntergalaticDiner';
     facebookContent.textContent = 'Intergalatic Diner';
 
+    // Adding image to img container.
+
+    restaurantImage.src = './images/tavern.jpeg';
+
     // Three children to content.
 
     content.appendChild(titleContent);
@@ -148,5 +152,6 @@ export function createHomeTab() {
 
     location.appendChild(locationTitle);
     location.appendChild(locationContent);
+
 
 }
