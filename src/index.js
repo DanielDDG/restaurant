@@ -7,7 +7,7 @@ import { createContactTab } from './contact';
 
 createHTML();
 createTabs();
-createContactTab();
+createHomeTab();
 console.log('Everything is working!');
 
 home.addEventListener('click', () => {
